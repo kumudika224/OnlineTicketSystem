@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Check in </title>
+        <link rel="icon" href="images/aa.ico">
+    </head>
+	
+	<style>
+	.html, body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: none;
+    padding: none;
+    font-family: sans-serif;
+    background-image: url(images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.nav{
+    background-color: beige;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.aa{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    
+}
+
+.cart{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 120px;
+    top: 30px;
+}
+
+.aaa{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+.air{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+}
+
+.homebutt{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 125px;
+    left: 16%;
+}
+
+
+.bookbutt{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 125px;
+    left: 36%;
+}
+
+.aboutbutt{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 125px;
+    left: 56%;
+}
+
+.contactbutt{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 125px;
+    left: 76%;
+}
+
+.checkinbox{
+    width: 350px;
+    height: 420px;
+    background-color: black;
+    color: #fff;
+    top: 63%;
+    left: 500px;
+    position:absolute;
+    opacity: 0.6;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 25px;
+}
+
+.checkinbox h3{
+    position: absolute;
+    top: -15px;
+    font-size: 25px;
+}
+
+
+.checkinbox input[type="text"], input[type="password"], input[type="email"],input[type="date"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    padding: 0px;
+    height: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.checkinbox2{
+    width: 350px;
+    height: 420px;
+    background-color: black;
+    color: #fff;
+    top: 63%;
+    left: 850px;
+    position:absolute;
+    opacity: 0.6;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 25px;
+}
+
+.checkinbox2 input[type="text"], input[type="password"], input[type="email"],input[type="date"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    padding: 0px;
+    height: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+        
+	
+	
+	
+	</style>
+    <body>
+
+    <div class="nav">
+        
+        </div>
+           <a href="homepage.html">
+           <img src="images/aa.ico" class="aa">
+           </a>
+           <a href="sho%20cart.html">
+           <img src="images/cart.png" class="cart">
+           </a>
+           <a href="login.html">
+           <img src="images/1.png" class="aaa">
+           </a>
+           <a href="homepage.html">
+           <img src="images/koo.png" class="air">
+           </a>
+    
+            <a href="homepage.html">
+        <img src="images/butt1.png" class="homebutt">
+        </a>
+        
+        <a href="checkin.html#">
+        <img src="images/butt2.png" class="bookbutt">
+        </a>
+    
+        <a href="aboutus.html">
+        <img src="images/butt3.png" class="aboutbutt">
+        </a>
+    
+        <a href="contactus.html">
+        <img src="images/butt4.png" class="contactbutt">
+        </a>
+        
+        <div class="checkinbox">
+        <form>    
+        <h3> Search Flights </h3>
+        <input type="radio" name="trip" value="multi" > International    
+        <input type="radio" name="trip" value="oneway" > Local
+        
+
+            <br><p class="dname"> Flying From </p>
+            <input type="text" name="dname" placeholder="Depature from"><br><br>
+            
+            <p class="ddate"> Departure date </p>
+            <input type="date" name="ddate" placeholder="Depature date"><br><br>
+            
+            <p class="class"> Class </p>
+             <div class="select">
+                      <select class="class">
+                        <option value="Economy Class">Economy Class</option>   
+                        <option value="First Class" >First Class</option>
+                        <option value="Business Class">Business Class</option>
+                         
+                      </select>
+                    </div>
+        </form>            
+        </div>
+        
+        <div class="checkinbox2">
+            <form>
+                <br>
+                <p class="aname"> Flying To </p>
+                <input type="text" name="dname" placeholder="Arrival in"><br><br>
+                
+                <p class="adate"> Arrival Date </p>
+                <input type="date" name="adate" placeholder="Arrival date"><br><br>
+                
+                <p class="pass"> Passengers</p>
+                <input type="number" min="0" max="10"><br><br>
+                
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <input type="submit" onclick="#" name="submit" value="Search">
+            
+            
+            
+            </form>
+        </div>
+        
+        
+        
+    </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Payment Type </title>
+        <link rel="icon" href="images/aa.ico">
+		
+	<style>
+	.html, body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: none;
+    padding: none;
+    font-family: sans-serif;
+    background-image: url(images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.nav{
+    background-color: beige;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.aa{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    
+}
+
+.cart{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 120px;
+    top: 30px;
+}
+
+.aaa{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+.air{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+}
+
+.homebutt{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 90px;
+    left: 16%;
+}
+
+.btn button {
+    background-color: beige ;
+    border: 1px solid lavender ; 
+    color: black; 
+    width: 140px;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    top: 130px;
+    left: 460px;
+}
+    
+.btn :after {
+    content: "";
+    clear: both;
+    display: table;  
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+.btn button:hover {
+    background-color: burlywood;
+}
+
+.checkinbox{
+    width: 650px;
+    height: 450px;
+    background-color: black;
+    color: #fff;
+    top: 64%;
+    left: 50%;
+    position:absolute;
+    opacity: 0.6;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 25px;
+}
+
+.checkinbox h3{
+    position: absolute;
+    top: -15px;
+    font-size: 25px;
+}
+
+
+.checkinbox input[type="text"], input[type="password"], input[type="email"],input[type="date"][input="submit"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    padding: 0px;
+    height: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.ppa{
+    position: absolute;
+    text-decoration: none;
+    top: 300px;
+    left: 700px;
+    color: black;
+}
+
+.ppa:hover{
+    color: grey;
+}
+
+	</style>
+	</head>
+    <body>
+
+    <div class="nav">
+        
+        </div>
+           <a href="homepage.html">
+           <img src="images/aa.ico" class="aa">
+           </a>
+           <a href="sho%20cart.html">
+           <img src="images/cart.png" class="cart">
+           </a>
+           <a href="login.html">
+           <img src="images/1.png" class="aaa">
+           </a>
+           <a href="homepage.html">
+           <img src="images/koo.png" class="air">
+           </a>
+
+            <div class="btn">
+                <button>Shopping Cart</button>
+                <button>Payment </button>
+                <button>Checkout</button>
+            </div>
+        
+             <div class="checkinbox">
+        <form>    
+        <h3> Search Flight </h3>
+        <input type="radio" name="type" value="cc"> Pay with Visa Card &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    
+        <input type="radio" name="type" value="pp"> Pay with Master Card
+        
+        
+
+            <p class="chname"> Card Holder's Name</p>
+            <input type="text" name="dname" placeholder="Name on card"><br><br>
+            
+            <p class="chname"> Credit Card Number </p>
+            <input type="text" name="ddate" placeholder="Card number"><br><br>
+            
+            <p class="date"> Expiry Date </p>
+            <input type="date" name="edate">
+            &emsp;&emsp;&emsp;&emsp;
+            
+            <p> CVC </p>
+            <input type="text" min="000" max="999" maxlength="3" name="cvc" placeholder="CVC Number">
+            
+           &emsp;<input type="submit" value="Submit" class="submit">
+            
+            
+        </form>
+            </div>
+        
+           
+                
+        
+        
+    </body>
+</html>
